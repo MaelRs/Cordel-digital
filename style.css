@@ -1,0 +1,119 @@
+@charset UTF-8;
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(fontes/Sriracha-Regular.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PassionOne';
+    src: url(fontes/PassionOne-Regular.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'PassionOne', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+html,body{
+    min-height: 100vh;
+    font-family: var(--fonte1);
+
+}
+       
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family:PassionOne, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    
+}
+header h1{
+    padding-top: 50px;
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+header p{
+    padding-bottom: 50px;
+    
+}
+header a{
+    color: white;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: red;
+    background-color: white;
+    text-decoration: underline;
+
+}
+section{
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 30px; 
+    font-size: 3.5vw; 
+   
+}
+section>p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-image: url(imagens/background001.jpg);
+    
+    background-position: right center;
+    background-size: cover;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.575);
+    background-attachment: fixed;
+    
+    
+           
+}
+.imagem>p{
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 50px;
+    text-shadow: 2px 2px 0px black;
+}
+
+#a2{
+    
+    background-image: url(imagens/background002.jpg);
+    
+    background-position: right center;
+    background-size: cover;
+   
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: red;
+    background-color: rgb(161, 161, 154);
+}
